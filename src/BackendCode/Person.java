@@ -77,7 +77,7 @@ public abstract class Person implements Serializable {
     public static boolean isContactNoValid(String contact) {
         boolean flag = true;
         if (contact.length() == 11) {
-            if (contact.substring(0, 2).equals("03")) {
+            if ("03".equals(contact.substring(0, 2))) {
                 for (int i = 0; i < contact.length(); i++) {
                     if (!Character.isDigit(contact.charAt(i))) {
                         flag = false;

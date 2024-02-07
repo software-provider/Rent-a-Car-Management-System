@@ -112,8 +112,8 @@ public class Login {
                     break;
                 }
                 case "Login": {
-                    if (UN_TextField.getText().trim().equalsIgnoreCase("admin")
-                            && String.valueOf(Password_Field.getPassword()).equals("123")) {
+                    if ("admin".equalsIgnoreCase(UN_TextField.getText().trim())
+                            && "123".equals(String.valueOf(Password_Field.getPassword()))) {
                         UN_TextField.setText("");
                         Password_Field.setText("");
                         Runner.getFrame().dispose();
